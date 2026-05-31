@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mmadness"
+version = "0.0.0"
+description = "mmadness workspace managed by uv; linted with ruff; tested with pytest"
+requires-python = ">=3.8"
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W", "C90"]
+ignore = ["E203"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.uv]
+# Placeholder configuration for `uv` management. Adjust as needed.
+managed = true
+
+[dependency-groups]
+lint = [
+    "pylint>=3.2.7",
+    "ruff>=0.15.15",
+]
+test = [
+    "pytest>=8.3.5",
+]
+
+
+# `uv add --group <name>` will create dependency groups in this file.

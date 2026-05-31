@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/mmadness.egg-info/PKG-INFO
+src/mmadness.egg-info/SOURCES.txt
+src/mmadness.egg-info/dependency_links.txt
+src/mmadness.egg-info/top_level.txt
+tests/test_hello.py

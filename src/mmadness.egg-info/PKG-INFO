@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: mmadness
+Version: 0.0.0
+Summary: mmadness workspace managed by uv; linted with ruff; tested with pytest
+Requires-Python: >=3.8
